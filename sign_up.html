@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="signup_style.css" rel="stylesheet">
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  </head>
+<body>
+<section>
+  <div class="container">
+    <div class="content">
+    <img src="img/games.jpg" alt="games">
+  <form>
+    <div class="form-content">
+      <div class="heading">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+      </div>
+      <div class="form-fields">
+              <div>
+                <label >Username</label>
+                <input type="text" class="form-control" id="Username"  required>
+              </div>
+              <div>
+                <label >Email address</label>
+                <input type="text" class="form-control" id="Email"  required>
+              </div>
+              <div>
+                <label >Password</label>
+                <input type="Password" class="form-control" id="Password" required>
+                <div id="passwordHelpBlock" class="form-text">
+                  <span>*Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</span>
+                  </div>
+                </div>
+                <div>
+                <label>Confirm Password</label>
+                <input type="Password" class="form-control" id="ConfirmPassword" required>
+                </div>
+              <button onclick="welcome()" type="button" class="submit-btn" >Submit</button>
+            </div>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<script>
+    function welcome()
+    {
+      window.location.href='welcome.html';
+    }
+</script> 
+
+</body>
+</html>

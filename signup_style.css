@@ -1,0 +1,125 @@
+
+* {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'itim';
+    src: url('fonts/Itim/Itim-Regular.ttf'); 
+}
+
+.content {
+    font-family: 'itim';
+    display: flex;
+    margin: 5% auto 15% auto;
+    border: 1px solid #8B008B;
+    width: 80%;
+}
+
+.heading h1 {
+    color: #8B008B;
+    font-size: 34px;
+}
+
+.heading p {
+    color: white;
+    font-size: 16px;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+}
+
+span {
+    color: white;
+    font-size: 14px;
+}
+
+.form-content {
+    margin-left: 15px;
+}
+
+.form-fields input {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    color: #8B008B;
+    background-color: black;
+    font-size: 16px;
+    border: 2px solid #8B008B;
+    border-radius: 25px;
+    padding: 15px 25px;
+}
+
+.submit-btn:hover {
+    color: black;
+    background-color: #8B008B;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .form-content {
+        width: 90%; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Media query for mobile  */
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 22px; 
+        text-align: center; 
+    }
+
+    .heading p {
+        font-size: 12px; 
+        text-align: center; 
+    }
+
+    .form-fields input {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+
+    .form-content {
+        width: 95%; 
+        margin: 0 auto; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .submit-btn {
+        padding: 10px 15px; 
+        font-size: 14px; 
+        width: 50%; 
+    }
+}
+
+
+
+
+

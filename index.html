@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title"> Login </div>
+         <form action="welcome.html" method="post">    <!-- !--go to another page --> 
+            <div class="field">
+               <input type="text" required>
+               <label>Username</label>
+           </div>
+           <div class="field">
+               <input type="Password" required>
+               <label>Password</label>
+           </div>
+           <div class="content">
+               <div class="checkbox">
+                   <input type="checkbox" id="remember-me">
+                   <label for="remember-me">Remember Me</label>
+               </div>
+               <div class="pass-link">
+                   <a href="sign_up.html">Forgot Password?</a>
+               </div>
+           </div>
+           <div class="field">
+               <input type="submit" value="Login">
+           </div>
+            <div class="signup-link">
+               Don't have an account? <a href="sign_up.html">Sign Up</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

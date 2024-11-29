@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Result</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Game Result</h1>
+    <h2 id="result-message"></h2>
+    <button onclick="playAgain()">Play Again</button>
+    <button onclick="goToGameSelect()">Go to Game Selection</button>
+  </div>
+
+  <script>
+    const winner = localStorage.getItem('winner');
+    const playerName = localStorage.getItem('playerName');
+
+    if (winner === 'draw') {
+      document.getElementById('result-message').textContent = "It's a Draw!";
+    } else if (winner === 'red') {
+      document.getElementById('result-message').textContent = `You Win!`;
+    } else if (winner === 'yellow') {
+      document.getElementById('result-message').textContent = 'Player 2 (Yellow) Wins!';
+    } else {
+      document.getElementById('result-message').textContent = 'No result found!';
+    }
+
+    function playAgain() {
+      window.location.href = 'HTML.HTML';
+    }
+
+    function goToGameSelect() {
+      window.location.href = 'game.html';
+    }
+  </script>
+</body>
+</html>

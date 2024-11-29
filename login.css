@@ -1,0 +1,141 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"itim", sans-serif;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+  background: #0c0d14;
+}
+
+.wrapper {
+  width: 380px;
+  height: 480px;
+  background: #0c0d14;
+  border-radius: 8px;
+  border: 1.5px solid #8B008B;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color:#8B008B;
+  margin: 20px;
+}
+
+.wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  flex-direction: column;
+}
+
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin: 20px;
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: #4158d0;
+}
+
+.wrapper form .field label {
+  position: absolute;
+  left: 20px;
+  bottom: 105%;
+  color: #999999;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+
+form .content {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+form .content label {
+  color: #fff;
+  user-select: none;
+  padding-left: 5px;
+}
+
+form .content .pass-link {
+  color: "";
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #8B008B;
+  transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+form .signup-link {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+
+}
+
+form .pass-link a,
+form .signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+  color: #8B008B; 
+}

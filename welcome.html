@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="welcomestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <dev>
+        <h1> Thank you for joining us!</h1>
+        <p> Get ready to jump in and start your gaming journey with us!</p>
+        <button onclick="startgame()">Start Playing</button>
+    </dev>
+<script>
+    const playerName = localStorage.getItem('playerName');
+    document.getElementById('player-name-display').textContent = playerName;
+    
+ function startgame() 
+ {
+    window.location.href = 'game.HTML';
+ }
+
+</script>
+</body>
+</html>
